@@ -9,7 +9,7 @@ body {
 }
 
 .drum-kit{
-    height: 400px;
+    height: 600px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -17,14 +17,32 @@ body {
     
 }
 
-.button {
-    width: 100px;
+.drumButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100px;
-    font-size: 18px;
-    margin: 10px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding-top: 30px;
     cursor: pointer;
+}
+
+.drumButton:hover{
+    /* make random? */
+    background-color: grey;
+}
+
+.drumButton.active {
+    animation: flash 0.2s;
+}
+
+@keyframes flash {
+    0% {background-color: transparent;}
+    100% {background-color: gray; scale: 1.5;}
+    
 }

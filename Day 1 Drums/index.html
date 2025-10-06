@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="title">
@@ -14,13 +14,17 @@
     </div>
 
     <div class="drum-kit">
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
+      <button class="drumButton" id="A" onclick="playAudio(this.id)">A<p class="name"></p></button>
+      <button class="drumButton" id="S" onclick="playAudio(this.id)">S<p class="name"></p></button>
+      <button class="drumButton" id="D" onclick="playAudio(this.id)">D<p class="name"></p></button>
+      <button class="drumButton" id="F" onclick="playAudio(this.id)">F<p class="name"></p></button>
+      <button class="drumButton" id="G" onclick="playAudio(this.id)">G<p class="name"></p></button>
+      <button class="drumButton" id="H" onclick="playAudio(this.id)">H<p class="name"></p></button>
+      <button class="drumButton" id="J" onclick="playAudio(this.id)">J<p class="name"></p></button>
+      <button class="drumButton" id="K" onclick="playAudio(this.id)">K<p class="name"></p></button>
+      <button class="drumButton" id="L" onclick="playAudio(this.id)">L<p class="name"></p></button>
     </div>
-
+    
+    <script src="script.js"></script>
   </body>
 </html>
